@@ -2,37 +2,37 @@
   {
     "id":1,
     "title":"RAPTOR TRADING",
-    "description":"A personal website to trade, manage, automate cryto-currencies. It also supports multi-accounts and bots",
+    "description":"A personal website to trade, manage, automate crypto-currency. It also supports multi-accounts and bots.",
     "url":"https://github.com/superRaptor911/raptorTradingApp"
   },
   {
     "id":2,
-    "title":"DAILY NEWS",
-    "description":"A flutter app that provides latest news which users can filter corresponding to their favourite categories.",
+    "title":"SPLIT IT",
+    "description":"Android app for splitting videos for WhatsApp status.",
     "url":"https://github.com/Vyshnav-KS/DailyNews"
   },
   {
     "id":3,
-    "title":"HACKCLUB CUCEK WEBSITE",
-    "description":"Worked on front-end part of Hack Club CUCEK community website.",
+    "title":"PDF-IT",
+    "description":"Mobile App to convert photos to PDF",
     "url":"https://github.com/hackclub-cucek/v4"
   },
   {
     "id":4,
-    "title":"MOVIEZONE",
-    "description":"A web app build using react js which user can search their favourite movies or tv shows, see trailers, cast information, posters, etc.",
+    "title":"WARZONE 2",
+    "description":"Top down multiplayer shooting game made using Godot engine for android.",
     "url":"https://github.com/Vyshnav-KS/Moviezone"
   },
   {
     "id":5,
-    "title":"DAILYDO",
-    "description":"A todo flutter mobile application where users can create an account and add daily tasks. Users can also login and logout.",
+    "title":"EXPENSE-METER",
+    "description":"A web application to track your spending. You can visualize your expenses ",
     "url":"https://github.com/Vyshnav-KS/Daily-Do"
   },
   {
     "id":6,
-    "title":"QUOTE BOT",
-    "description":"A discord bot which replies encouraging quotes when a sad word is said by user. Build using nodejs and express js.",
+    "title":"RMUSIC",
+    "description":"A command line youtube music downloader and player script. You can listen/download music from terminal",
     "url":"https://github.com/Vyshnav-KS/Quote-Bot"
   }
 ]

@@ -1,25 +1,25 @@
-import React, { lazy, Suspense } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import "./App.css";
-import { Switch } from "react-router";
+import React, {lazy, Suspense} from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
+import './App.css';
+import {Switch} from 'react-router';
 
-import Home from "./pages/Desktop/Home";
-import HomeMob from "./pages/Mobile/HomeMob";
-import useDeviceType from "./hooks/deviceType";
+import Home from './pages/Desktop/Home';
+import HomeMob from './pages/Mobile/HomeMob';
+import useDeviceType from './hooks/deviceType';
 
-const About = lazy(() => import("./pages/Desktop/About"));
-const Works = lazy(() => import("./pages/Desktop/Works"));
-const Services = lazy(() => import("./pages/Desktop/Services"));
-const Contact = lazy(() => import("./pages/Desktop/Contact"));
-const WorksMob = lazy(() => import("./pages/Mobile/WorksMob"));
-const NavBar = lazy(() => import("./pages/Mobile/NavBar"));
-const ServicesMob = lazy(() => import("./pages/Mobile/ServicesMob"));
-const ContactMob = lazy(() => import("./pages/Mobile/ContactMob"));
-const AboutMob = lazy(() => import("./pages/Mobile/AboutMob"));
+const About = lazy(() => import('./pages/Desktop/About'));
+const Works = lazy(() => import('./pages/Desktop/Works'));
+const Services = lazy(() => import('./pages/Desktop/Services'));
+const Contact = lazy(() => import('./pages/Desktop/Contact'));
+const WorksMob = lazy(() => import('./pages/Mobile/WorksMob'));
+const NavBar = lazy(() => import('./pages/Mobile/NavBar'));
+const ServicesMob = lazy(() => import('./pages/Mobile/ServicesMob'));
+const ContactMob = lazy(() => import('./pages/Mobile/ContactMob'));
+const AboutMob = lazy(() => import('./pages/Mobile/AboutMob'));
 
 function App() {
   const deviceType = useDeviceType();
-  if (deviceType === "mobile") {
+  if (deviceType === 'mobile') {
     return (
       <BrowserRouter>
         <div className="app">
