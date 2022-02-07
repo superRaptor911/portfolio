@@ -10,26 +10,28 @@ endif
 set shortmess=aoO
 argglobal
 %argdel
-edit App.js
+edit pages/Desktop/Home.js
 argglobal
-balt hooks/deviceType.js
-let s:l = 64 - ((43 * winheight(0) + 22) / 44)
+balt pages/Mobile/HomeMob.js
+let s:l = 17 - ((16 * winheight(0) + 22) / 45)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 64
+keepjumps 17
 normal! 0
 tabnext 1
-badd +0 App.js
+badd +36 App.js
 badd +1 hooks/deviceType.js
 badd +5 styles/constants.js
-badd +16 pages/Mobile/HomeMob.js
+badd +17 pages/Mobile/HomeMob.js
 badd +16 pages/Desktop/Home.js
 badd +23 components/Header/Header.js
 badd +30 pages/Desktop/Works.js
-badd +23 assets/json/projects.json
+badd +35 assets/json/projects.json
 badd +10 pages/Mobile/WorksMob.js
 badd +3 pages/Splitit_privacyPolicy.jsx
+badd +29 pages/Desktop/About.js
+badd +10 pages/Mobile/AboutMob.js
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
 endif

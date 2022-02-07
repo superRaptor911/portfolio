@@ -1,7 +1,8 @@
-import { css, StyleSheet } from "aphrodite";
-import React from "react";
-import Dev from "../../assets/images/wdev.png";
-import { COLORS } from "../../styles/constants";
+/* eslint-disable react/no-unescaped-entities */
+import {css, StyleSheet} from 'aphrodite';
+import React from 'react';
+import Dev from '../../assets/images/wdev.png';
+import {COLORS} from '../../styles/constants';
 
 const HomeMobile = () => {
   return (
@@ -19,13 +20,12 @@ const HomeMobile = () => {
           className={css(styles.button)}
           onTouchStart={() => {
             window.open(
-              "https://drive.google.com/file/d/1riOppRrSATQHXpe6jsb3esmGWCMSW60F/view?usp=sharing",
-              "_blank"
+              'https://drive.google.com/file/d/1riOppRrSATQHXpe6jsb3esmGWCMSW60F/view?usp=sharing',
+              '_blank',
             );
-          }}
-        >
-          {" "}
-          DOWNLOAD CV{" "}
+          }}>
+          {' '}
+          DOWNLOAD CV{' '}
         </button>
       </div>
     </div>
@@ -33,33 +33,33 @@ const HomeMobile = () => {
 };
 const styles = StyleSheet.create({
   root: {
-    alignItems: "center",
+    alignItems: 'center',
     marginLeft: 20,
     marginRight: 20,
   },
   container: {
-    display: "flex",
-    flexDirection: "column",
-    width: "100%",
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%',
   },
   name: {
     color: COLORS.white,
     fontSize: 18,
-    lineHeight: "27px",
+    lineHeight: '27px',
     marginTop: 28,
     fontWeight: 600,
   },
   title: {
     marginTop: 10,
     fontSize: 27,
-    lineHeight: "42px",
+    lineHeight: '42px',
     // letterSpacing: ".02em",
-    fontWeight: "bold",
+    fontWeight: 'bold',
     color: COLORS.secondary,
   },
   image: {
-    textAlign: "center",
-    alignItems: "center",
+    textAlign: 'center',
+    alignItems: 'center',
   },
   dev: {
     marginTop: 20,
@@ -69,11 +69,11 @@ const styles = StyleSheet.create({
   description: {
     marginTop: 30,
     fontSize: 18,
-    lineHeight: "26px",
+    lineHeight: '26px',
     color: COLORS.white,
   },
   button: {
-    background: "transparent",
+    background: 'transparent',
     border: `1px solid ${COLORS.secondary}`,
     width: 154,
     height: 40,
@@ -82,8 +82,8 @@ const styles = StyleSheet.create({
     marginTop: 24,
     marginBottom: 24,
     fontWeight: 500,
-    textAlign: "center",
-    alignItems: "center",
+    textAlign: 'center',
+    alignItems: 'center',
     color: COLORS.white,
   },
 });
