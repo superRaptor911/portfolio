@@ -16,12 +16,15 @@ const NavBar = lazy(() => import('./pages/Mobile/NavBar'));
 const ServicesMob = lazy(() => import('./pages/Mobile/ServicesMob'));
 const ContactMob = lazy(() => import('./pages/Mobile/ContactMob'));
 const AboutMob = lazy(() => import('./pages/Mobile/AboutMob'));
+const SplitItPrivacyPolicy = lazy(() =>
+  import('./pages/Splitit_privacyPolicy'),
+);
 
 function App() {
   const deviceType = useDeviceType();
   if (deviceType === 'mobile') {
     return (
-      <BrowserRouter>
+      <BrowserRouter key="a">
         <div className="app">
           <Suspense fallback={<div>Loading...</div>}>
             <NavBar />
@@ -35,6 +38,10 @@ function App() {
               <Route path="/services" component={ServicesMob} exact></Route>
               <Route path="/contact" component={ContactMob} exact></Route>
               <Route path="/about" component={AboutMob} exact></Route>
+
+              <Route
+                path="/projects/splitit/privacy"
+                component={SplitItPrivacyPolicy}></Route>
             </Suspense>
           </Switch>
         </div>
@@ -42,7 +49,7 @@ function App() {
     );
   } else {
     return (
-      <BrowserRouter>
+      <BrowserRouter key="b">
         <div className="app">
           <Switch>
             <Route path="/" id="home" exact>
@@ -53,6 +60,9 @@ function App() {
               <Route path="/services" component={Services}></Route>
               <Route path="/contact" component={Contact}></Route>
               <Route path="/about" component={About}></Route>
+              <Route
+                path="/projects/splitit/privacy"
+                component={SplitItPrivacyPolicy}></Route>
             </Suspense>
           </Switch>
         </div>

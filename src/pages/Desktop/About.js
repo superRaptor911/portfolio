@@ -3,7 +3,7 @@ import React from 'react';
 import {StyleSheet, css} from 'aphrodite';
 import Header from '../../components/Header/Header';
 import {COLORS} from '../../styles/constants';
-import DP from '../../assets/images/dp-web.png';
+import DP from '../../assets/images/Aditya.JPG';
 import Github from '../../assets/icons/ghub.png';
 import Instagram from '../../assets/icons/ig.png';
 import Linkedin from '../../assets/icons/lin.png';
