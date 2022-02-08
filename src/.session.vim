@@ -13,18 +13,18 @@ argglobal
 edit pages/Desktop/Home.js
 argglobal
 balt pages/Mobile/HomeMob.js
-let s:l = 17 - ((16 * winheight(0) + 22) / 45)
+let s:l = 28 - ((26 * winheight(0) + 22) / 45)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 17
-normal! 0
+keepjumps 28
+normal! 016|
 tabnext 1
+badd +24 pages/Desktop/Home.js
+badd +28 pages/Mobile/HomeMob.js
 badd +36 App.js
 badd +1 hooks/deviceType.js
 badd +5 styles/constants.js
-badd +17 pages/Mobile/HomeMob.js
-badd +16 pages/Desktop/Home.js
 badd +23 components/Header/Header.js
 badd +30 pages/Desktop/Works.js
 badd +35 assets/json/projects.json
