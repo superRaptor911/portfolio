@@ -6,28 +6,34 @@
     "url":"https://github.com/superRaptor911/raptorTradingApp"
   },
   {
+    "id":7,
+    "title":"WAZIRX API NODEJS",
+    "description":"Wazirx api for nodejs",
+    "url":"https://www.npmjs.com/package/wazirx-api"
+  },
+  {
     "id":2,
     "title":"SPLIT IT",
     "description":"Android app for splitting videos for WhatsApp status.",
-    "url":"https://github.com/Vyshnav-KS/DailyNews"
+    "url":"https://github.com/superRaptor911/SplitIt"
   },
   {
     "id":3,
     "title":"PDF-IT",
     "description":"Mobile App to convert photos to PDF",
-    "url":"https://github.com/hackclub-cucek/v4"
+    "url":"https://github.com/superRaptor911/Pdf-It"
   },
   {
     "id":4,
     "title":"WARZONE 2",
     "description":"Top down multiplayer shooting game made using Godot engine for android.",
-    "url":"https://github.com/Vyshnav-KS/Moviezone"
+    "url":"https://github.com/superRaptor911/WarZone_2"
   },
   {
     "id":5,
     "title":"EXPENSE-METER",
     "description":"A web application to track your spending. You can visualize your expenses ",
-    "url":"https://github.com/Vyshnav-KS/Daily-Do"
+    "url":"https://github.com/superRaptor911/ExpenseMeter"
   },
   {
     "id":6,
