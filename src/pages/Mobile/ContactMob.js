@@ -3,6 +3,7 @@ import Mail from '../../assets/icons/mail.png';
 import {StyleSheet, css} from 'aphrodite';
 import Call from '../../assets/icons/call.png';
 import {COLORS} from '../../styles/constants';
+import {GlobalData} from '../../globalData';
 
 const ContactMob = () => {
   return (
@@ -17,7 +18,7 @@ const ContactMob = () => {
           <div
             className={css(styles.button)}
             onTouchStart={() => {
-              window.open('mailto: raptor.inc2018@gmail.com', '_blank');
+              window.open(`mailto: ${GlobalData.contact.email}`, '_blank');
             }}>
             <img src={Mail} alt="" className={css(styles.icon)} />
             <div className={css(styles.btnTxt)}>say hello!</div>
@@ -25,7 +26,10 @@ const ContactMob = () => {
           <div
             className={css(styles.button)}
             onTouchStart={() => {
-              window.open('https://wa.me/+918505908858', '_blank');
+              window.open(
+                `https://wa.me/${GlobalData.contact.phone}`,
+                '_blank',
+              );
             }}>
             <img src={Call} alt="" className={css(styles.icon)} />
             <div className={css(styles.btnTxt)}>give a buzz</div>

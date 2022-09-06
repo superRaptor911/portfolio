@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header';
 import {COLORS} from '../../styles/constants';
 import Mail from '../../assets/icons/mail.png';
 import Call from '../../assets/icons/call.png';
+import {GlobalData} from '../../globalData';
 
 const Contact = () => {
   return (
@@ -19,7 +20,7 @@ const Contact = () => {
           <button
             className={css(classes.button)}
             onClick={() => {
-              window.open('mailto: raptor.inc2018@gmail.com', '_blank');
+              window.open(`mailto: ${GlobalData.contact.email}`, '_blank');
             }}>
             <img src={Mail} alt="mail icon" className={css(classes.btnIcon)} />
 
@@ -28,7 +29,10 @@ const Contact = () => {
           <button
             className={css(classes.button)}
             onClick={() => {
-              window.open('https://wa.me/+918505908858', '_blank');
+              window.open(
+                `https://wa.me/${GlobalData.contact.phone}`,
+                '_blank',
+              );
             }}>
             <img src={Call} alt="call icon" className={css(classes.btnIcon)} />
             <span className={css(classes.btntxt)}>give a buzz</span>
