@@ -1,8 +1,8 @@
-import React from "react";
-import { StyleSheet, css } from "aphrodite";
-import Header from "../../components/Header/Header";
-import { COLORS } from "../../styles/constants";
-import projects from "../../assets/json/projects.json";
+import React from 'react';
+import {StyleSheet, css} from 'aphrodite';
+import Header from '../../components/Header/Header';
+import {COLORS} from '../../styles/constants';
+import projects from '../../assets/json/projects.json';
 
 const Works = () => {
   return (
@@ -12,7 +12,7 @@ const Works = () => {
         <span className={css(classes.title)}>MY PROJECTS</span>
         <div className={css(classes.cards)}>
           <div className={css(classes.card_r)}>
-            {projects.map((project) => (
+            {projects.map(project => (
               <div className={css(classes.card)} key={project.id}>
                 <span className={css(classes.card_title)}>{project.title}</span>
                 <span className={css(classes.card_desc)}>
@@ -21,9 +21,8 @@ const Works = () => {
                 <button
                   className={css(classes.card_button)}
                   onClick={() => {
-                    window.open(project.url, "_blank");
-                  }}
-                >
+                    window.open(project.url, '_blank');
+                  }}>
                   KNOW MORE
                 </button>
               </div>
@@ -34,11 +33,10 @@ const Works = () => {
           className={css(classes.button)}
           onClick={() => {
             window.open(
-              "https://github.com/superRaptor911?tab=repositories",
-              "_blank"
+              'https://github.com/superRaptor911?tab=repositories',
+              '_blank',
             );
-          }}
-        >
+          }}>
           MORE PROJECTS
         </button>
       </div>
@@ -48,149 +46,149 @@ const Works = () => {
 
 const classes = StyleSheet.create({
   root: {
-    display: "flex",
-    flexDirection: "column",
+    display: 'flex',
+    flexDirection: 'column',
   },
   container: {
-    display: "flex",
-    flexDirection: "column",
-    textAlign: "center",
-    marginLeft: "auto",
-    marginRight: "auto",
+    display: 'flex',
+    flexDirection: 'column',
+    textAlign: 'center',
+    marginLeft: 'auto',
+    marginRight: 'auto',
     maxWidth: 1241,
     minHeight: 420,
     marginTop: 100,
-    "@media (max-width: 1536px)": {
+    '@media (max-width: 1536px)': {
       width: 993,
       maxHeight: 336,
       marginTop: 80,
     },
-    "@media (max-width: 1280px)": {
+    '@media (max-width: 1280px)': {
       width: 827,
       maxHeight: 280,
       marginTop: 67,
     },
   },
   title: {
-    textAlign: "left",
-    fontWeight: "bold",
+    textAlign: 'left',
+    fontWeight: 'bold',
     fontSize: 40,
-    lineHeight: "60px",
-    letterSpacing: "0.02em",
+    lineHeight: '60px',
+    letterSpacing: '0.02em',
     color: COLORS.secondary,
-    "@media (max-width: 1536px)": {
+    '@media (max-width: 1536px)': {
       fontSize: 32,
-      lineHeight: "48px",
+      lineHeight: '48px',
     },
-    "@media (max-width: 1280px)": {
+    '@media (max-width: 1280px)': {
       fontSize: 27,
-      lineHeight: "40px",
+      lineHeight: '40px',
     },
   },
   cards: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
   },
   card_r: {
-    display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",
-    width: "100%",
-    marginLeft: "auto",
-    marginRight: "auto",
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 1fr)',
+    width: '100%',
+    marginLeft: 'auto',
+    marginRight: 'auto',
     marginBottom: 14,
     gap: 16,
-    "@media (max-width: 1536px)": {
+    '@media (max-width: 1536px)': {
       marginBottom: 11.2,
       gap: 12,
     },
-    "@media (max-width: 1280px)": {
+    '@media (max-width: 1280px)': {
       marginBottom: 9.3,
       gap: 10,
     },
   },
   card: {
     minWidth: 404,
-    padding: "12px 18px",
+    padding: '12px 18px',
     borderRadius: 8,
     maxHeight: 178,
     backgroundColor: COLORS.primary_shade,
-    justifyContent: "space-between",
-    display: "flex",
-    flexDirection: "column",
-    textAlign: "left",
-    "@media (max-width: 1536px)": {
+    justifyContent: 'space-between',
+    display: 'flex',
+    flexDirection: 'column',
+    textAlign: 'left',
+    '@media (max-width: 1536px)': {
       minWidth: 323,
-      padding: "9.6px 14.4px",
+      padding: '9.6px 14.4px',
       borderRadius: 6.4,
       maxHeight: 142,
     },
-    "@media (max-width: 1280px)": {
+    '@media (max-width: 1280px)': {
       minWidth: 269,
-      padding: "8px 12px",
+      padding: '8px 12px',
       borderRadius: 5.3,
       maxHeight: 119,
     },
   },
   card_title: {
     fontSize: 22,
-    lineHeight: "33px",
+    lineHeight: '33px',
     fontWeight: 600,
     color: COLORS.secondary,
-    "@media (max-width: 1536px)": {
+    '@media (max-width: 1536px)': {
       fontSize: 18,
-      lineHeight: "26.4px",
+      lineHeight: '26.4px',
     },
-    "@media (max-width: 1280px)": {
+    '@media (max-width: 1280px)': {
       fontSize: 15,
-      lineHeight: "22px",
+      lineHeight: '22px',
     },
   },
   card_desc: {
     fontSize: 17,
-    lineHeight: "25px",
+    lineHeight: '25px',
     color: COLORS.white,
-    "@media (max-width: 1536px)": {
+    '@media (max-width: 1536px)': {
       fontSize: 13.6,
-      lineHeight: "20px",
+      lineHeight: '20px',
     },
-    "@media (max-width: 1280px)": {
+    '@media (max-width: 1280px)': {
       fontSize: 11,
-      lineHeight: "17px",
+      lineHeight: '17px',
     },
   },
   card_button: {
     width: 155,
     borderRadius: 8,
     fontSize: 16,
-    lineHeight: "24px",
+    lineHeight: '24px',
     marginTop: 10,
     height: 38,
     border: `1px solid ${COLORS.secondary}`,
     backgroundColor: COLORS.primary_shade,
     color: COLORS.white,
-    fontWeight: "500",
-    cursor: "pointer",
-    "@media (max-width: 1536px)": {
+    fontWeight: '500',
+    cursor: 'pointer',
+    '@media (max-width: 1536px)': {
       width: 124,
       borderRadius: 6.4,
       fontSize: 13,
-      lineHeight: "19px",
+      lineHeight: '19px',
       marginTop: 8,
       height: 30,
     },
-    "@media (max-width: 1280px)": {
+    '@media (max-width: 1280px)': {
       width: 103,
       borderRadius: 5.3,
       fontSize: 11,
-      lineHeight: "16px",
+      lineHeight: '16px',
       marginTop: 7,
       height: 26,
     },
   },
   button: {
     width: 194,
-    lineHeight: "30px",
+    lineHeight: '30px',
     borderRadius: 8,
     fontSize: 20,
     height: 51,
@@ -198,17 +196,17 @@ const classes = StyleSheet.create({
     border: `1px solid ${COLORS.secondary}`,
     fontWeight: 500,
     color: COLORS.white,
-    cursor: "pointer",
-    "@media (max-width: 1536px)": {
+    cursor: 'pointer',
+    '@media (max-width: 1536px)': {
       width: 155,
-      lineHeight: "24px",
+      lineHeight: '24px',
       borderRadius: 6.4,
       fontSize: 16,
       height: 41,
     },
-    "@media (max-width: 1280px)": {
+    '@media (max-width: 1280px)': {
       width: 129,
-      lineHeight: "20px",
+      lineHeight: '20px',
       borderRadius: 5.3,
       fontSize: 13,
       height: 34,
