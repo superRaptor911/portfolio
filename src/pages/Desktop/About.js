@@ -5,9 +5,10 @@ import Header from '../../components/Header/Header';
 import {COLORS} from '../../styles/constants';
 import DP from '../../assets/images/Aditya.JPG';
 import Github from '../../assets/icons/ghub.png';
-import Instagram from '../../assets/icons/ig.png';
+import Youtube from '../../assets/icons/youtube.png';
 import Linkedin from '../../assets/icons/lin.png';
 import Twitter from '../../assets/icons/twt.png';
+import {GlobalData} from '../../globalData';
 
 const About = () => {
   return (
@@ -53,15 +54,15 @@ const About = () => {
             alt="github"
             className={css(classes.icon)}
             onClick={() => {
-              window.open('https://github.com/Vyshnav-KS', '_blank');
+              window.open(GlobalData.social.github, '_blank');
             }}
           />
           <img
-            src={Instagram}
-            alt="instagram"
+            src={Youtube}
+            alt="Youtube"
             className={css(classes.icon)}
             onClick={() => {
-              window.open('https://www.instagram.com/____vyshnav_', '_blank');
+              window.open(GlobalData.social.youtube, '_blank');
             }}
           />
           <img
@@ -69,10 +70,7 @@ const About = () => {
             alt="linkedin"
             className={css(classes.icon)}
             onClick={() => {
-              window.open(
-                'https://www.linkedin.com/in/vyshnav-ks-a5b5351a5',
-                '_blank',
-              );
+              window.open(GlobalData.social.linkedin, '_blank');
             }}
           />
           <img
@@ -80,7 +78,7 @@ const About = () => {
             alt="twitter"
             className={css(classes.icon)}
             onClick={() => {
-              window.open('https://twitter.com/VyshnavKS2', '_blank');
+              window.open(GlobalData.social.twitter, '_blank');
             }}
           />
         </div>

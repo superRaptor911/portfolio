@@ -3,10 +3,11 @@ import React from 'react';
 import {COLORS} from '../../styles/constants';
 import DP from '../../assets/images/Aditya.JPG';
 import Github from '../../assets/icons/ghub.png';
-import Instagram from '../../assets/icons/ig.png';
+import Youtube from '../../assets/icons/youtube.png';
 import Linkedin from '../../assets/icons/lin.png';
 import {StyleSheet, css} from 'aphrodite';
 import Twitter from '../../assets/icons/twt.png';
+import {GlobalData} from '../../globalData';
 
 const AboutMob = () => {
   return (
@@ -46,15 +47,15 @@ const AboutMob = () => {
             alt="icons"
             className={css(styles.icon)}
             onTouchStart={() => {
-              window.open('https://github.com/Vyshnav-KS', '_blank');
+              window.open(GlobalData.social.github, '_blank');
             }}
           />
           <img
-            src={Instagram}
+            src={Youtube}
             alt="icons"
             className={css(styles.icon)}
             onTouchStart={() => {
-              window.open('https://www.instagram.com/____vyshnav_', '_blank');
+              window.open(GlobalData.social.youtube, '_blank');
             }}
           />
 
@@ -63,10 +64,7 @@ const AboutMob = () => {
             alt="icons"
             className={css(styles.icon)}
             onTouchStart={() => {
-              window.open(
-                'https://www.linkedin.com/in/vyshnav-ks-a5b5351a5',
-                '_blank',
-              );
+              window.open(GlobalData.social.linkedin, '_blank');
             }}
           />
           <img
@@ -74,7 +72,7 @@ const AboutMob = () => {
             alt="icons"
             className={css(styles.icon)}
             onTouchStart={() => {
-              window.open('https://twitter.com/VyshnavKS2', '_blank');
+              window.open(GlobalData.social.twitter, '_blank');
             }}
           />
         </div>
